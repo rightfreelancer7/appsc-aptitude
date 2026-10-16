@@ -1,0 +1,545 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="APPSC aptitude study notes: concepts, Telugu explanations, worked examples, mental maths and practice."><title>APPSC Aptitude · Study Companion</title><style>
+:root{--bg:#f5f4ee;--paper:#fffefa;--ink:#20372f;--muted:#65756a;--accent:#216b52;--line:#dce1d7}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 system-ui,sans-serif}a{color:var(--accent)}button,input{font:inherit}aside{position:fixed;inset:0 auto 0 0;width:290px;background:#183b30;color:#f5f7eb;padding:30px 22px;overflow:auto}aside h2{font-size:22px;line-height:1.3;margin:5px 0}aside small{color:#bdd3c3}aside input{width:100%;margin:24px 0 14px;background:#294b3f;color:white;border:1px solid #567265;border-radius:7px;padding:9px}aside input::placeholder{color:#c2d1c7}nav a{display:block;text-decoration:none;color:#d8e5d9;padding:9px 12px;margin:3px 0;border-radius:6px;font-size:14px}nav a.active,nav a:hover{background:#dbe8b4;color:#183b30}main{margin-left:290px;max-width:1300px;padding:40px 65px 80px}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-weight:700}h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(36px,5vw,58px);line-height:1.15;margin:12px 0 18px}h2{font-size:25px;line-height:1.35}h3{font-size:18px;margin-top:30px}.intro{max-width:750px;color:var(--muted)}.meta{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.pill{font-size:12px;border:1px solid var(--line);border-radius:20px;padding:5px 13px;background:var(--paper)}section{scroll-margin-top:25px;border-top:1px solid var(--line);padding-top:35px;margin-top:40px}.te{color:#526a58;background:#eaf0e4;padding:14px 20px;border-left:3px solid #8fa870}.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px 25px;margin:15px 0}.card h3{margin:0 0 10px}.tip{background:#fff2d7;border-left:4px solid #c89137;padding:18px 22px;border-radius:4px}details{border-bottom:1px solid var(--line);padding:15px 0}summary{cursor:pointer;font-weight:600}details p{color:var(--accent);padding-left:20px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}button{border:1px solid var(--line);border-radius:6px;padding:8px 16px;background:var(--paper);color:var(--ink);cursor:pointer}button.done{background:#dbe8b4}footer{font-size:13px;color:var(--muted);margin-top:40px}#mobile{display:none}#empty{display:none}li{margin:12px 0}.progress{font-size:13px;color:#c4d9c8;margin-top:22px}@media(max-width:850px){aside{position:relative;width:100%;padding:20px}main{margin:0;padding:25px 22px}nav{display:none}aside.open nav{display:block}aside input{margin:12px 0}#mobile{display:block;float:right;background:transparent;color:white;border-color:#789585}h1{font-size:38px}}@media print{aside,.actions,#print{display:none}main{margin:0;padding:0}body{background:white}details p{display:block}.card{break-inside:avoid}section{break-before:page}}
+</style></head><body><aside id="sidebar"><button id="mobile" aria-expanded="false" aria-controls="nav">Topics ☰</button><small>STUDY COMPANION</small><h2>APPSC<br>Aptitude notebook</h2><input id="search" type="search" aria-label="Search lessons" placeholder="Search a concept…"><nav id="nav" aria-label="Topic menu"></nav><p class="progress" id="progress"></p></aside><main><header><div class="eyebrow">Concept → Example → Practice</div><h1>Build understanding.<br>Calculate with confidence.</h1><p class="intro">Your aptitude lessons in one place. Follow the topic menu, learn the method, then try each question before opening its answer. English concepts, Telugu summaries and calculation shortcuts accompany every lesson.</p><div class="meta"><span class="pill">11 sections</span><span class="pill">English + తెలుగు</span><span class="pill">Updated 16 October 2026</span><span class="pill">Answers on demand</span></div><button id="print">Print / save as PDF</button><p class="intro">These are original teaching examples, not claimed previous APPSC questions. Exam schemes can change: consult the applicable <a href="https://portal-psc.ap.gov.in/HomePages/GroupISyllubus">official syllabus</a>. This notebook focuses on the aptitude topics already discussed.</p></header><p id="empty">No lessons match your search.</p><div id="lessons"></div><section id="next"><div class="eyebrow">Continue your preparation</div><h2>Next lesson: Time and work</h2><p>Planned next: work rates, the LCM method, combined workers, efficiency, and workers joining or leaving. This topic has not yet been taught in this notebook.</p><p>Study rhythm: revise mistakes → learn a concept → solve independently → practise with a timer → record errors. Progress marks are saved only in this browser.</p><h3>Optional video references</h3><p><a href="https://www.udemy.com/course/aptitude-for-competitive-examinations/">Quantitative Aptitude — Apti mojo / Uday</a><br><a href="https://www.udemy.com/course/quantitative-aptitude-competitive-exams/">Mastering Quantitative Aptitude — Learn CAE</a><br><a href="https://www.udemy.com/course/math-for-competitions/">Number Systems — Rekha Agarwal</a></p><p>Course links were discussed on 7 October 2026. Check current language, curriculum, previews and price before enrolling. These courses do not replace the complete APPSC syllabus.</p></section><footer>Learning notebook · No account needed · No analytics · New lessons are added through repository updates.</footer></main><script>
+const topics=[
+  {
+    "title": "Number system",
+    "te": "సంఖ్యల రకాలు, కారణాంకాలు, శేషాలు",
+    "concepts": [
+      "Natural numbers: 1, 2, 3… (using the convention starting at 1). Whole numbers include 0. Integers include negative whole numbers, zero and positive whole numbers.",
+      "Rational numbers can be written as p/q, with integers p, q and q ≠ 0. Irrational numbers cannot: √2 and π are examples. √49 = 7 is rational.",
+      "A prime is a positive integer greater than 1 with exactly two positive factors. 1 is neither prime nor composite. 2 is the only even prime.",
+      "A factor divides a number exactly. Multiples are obtained by multiplying the number by integers. Coprime numbers have HCF 1; they need not themselves be prime.",
+      "Divisibility: 2 → even last digit; 3 or 9 → digit sum divisible by 3 or 9; 4 → last two digits; 8 → last three digits; 5 → ends in 0 or 5; 6 → divisible by 2 and 3; 11 → alternating digit-sum difference is 0 or a multiple of 11.",
+      "Dividend = divisor × quotient + remainder. For positive divisor d, 0 ≤ remainder < d. Consecutive integers include an even number, so n(n+1) is even."
+    ],
+    "examples": [
+      [
+        "Why is 13 not a factor of 36?",
+        "36 = 13 × 2 + 10. The remainder is not zero. Positive alone does not mean positive factor."
+      ],
+      [
+        "Find x if 47x2 is divisible by 9.",
+        "Digit sum = 13 + x. For a digit x, the only possible multiple of 9 is 18. Therefore x = 5."
+      ],
+      [
+        "A number leaves remainder 3 on division by 5. What about twice it?",
+        "Write N = 5k + 3, where k is an integer quotient. 2N = 10k + 6 = 5(2k + 1) + 1. Doubling the leftover 3 gives 6: one more group of 5 and remainder 1. Example: 8 → 16; remainders 3 → 1."
+      ]
+    ],
+    "tip": "Use divisibility before long division. Pair factors systematically: 36 has 1, 2, 3, 4, 6, 9, 12, 18, 36.",
+    "practice": [
+      [
+        "Are 14 and 25 coprime?",
+        "Yes: HCF 1."
+      ],
+      [
+        "List positive factors of 24.",
+        "1, 2, 3, 4, 6, 8, 12, 24."
+      ],
+      [
+        "Remainder when 83 is divided by 7?",
+        "6: 83 = 7 × 11 + 6."
+      ],
+      [
+        "N leaves remainder 4 on division by 6. Remainder of 2N?",
+        "2: 2 × 4 = 8 = 6 + 2."
+      ]
+    ]
+  },
+  {
+    "title": "HCF and LCM",
+    "te": "గరిష్ఠ సామాన్య భాజకం, కనిష్ఠ సామాన్య గుణిజం",
+    "concepts": [
+      "HCF is the greatest positive integer dividing all given numbers exactly. LCM is the smallest positive common multiple.",
+      "Prime factorisation: for HCF, choose common primes with the smaller exponents. For LCM, choose all occurring primes with the larger exponents.",
+      "For two positive integers only: HCF × LCM = product of the integers. Do not apply this directly to three numbers.",
+      "HCF often solves longest equal pieces or maximum identical groups. LCM often solves repeating events next coinciding. Check what quantity is requested."
+    ],
+    "examples": [
+      [
+        "Find HCF and LCM of 24 and 36.",
+        "24 = 2³ × 3; 36 = 2² × 3². HCF = 2² × 3 = 12. LCM = 2³ × 3² = 72."
+      ],
+      [
+        "12 apples and 18 oranges: maximum identical packets using everything?",
+        "HCF(12,18) = 6 packets. Each contains 2 apples and 3 oranges."
+      ],
+      [
+        "48 m and 60 m ropes: longest equal pieces without waste?",
+        "HCF = 12 m per piece. Number of pieces = 48/12 + 60/12 = 9."
+      ],
+      [
+        "Bells ring every 4 and 6 minutes. Next coincidence?",
+        "LCM(4,6) = 12 minutes after ringing together."
+      ]
+    ],
+    "tip": "For two numbers, find HCF first, then LCM = (first ÷ HCF) × second. Dividing first keeps numbers smaller.",
+    "practice": [
+      [
+        "HCF of 16 and 24?",
+        "8."
+      ],
+      [
+        "LCM of 6 and 8?",
+        "24."
+      ],
+      [
+        "20 pencils, 30 pens: maximum identical packets?",
+        "10 packets: 2 pencils and 3 pens each."
+      ],
+      [
+        "Bells every 6, 8, 12 minutes: next together?",
+        "24 minutes."
+      ]
+    ]
+  },
+  {
+    "title": "Fractions",
+    "te": "సమాన భాగాలు, భిన్నాల పోలిక మరియు లెక్కలు",
+    "concepts": [
+      "In 3/4, denominator 4 counts equal parts in a whole; numerator 3 counts parts taken. A denominator cannot be zero.",
+      "Equivalent fractions come from multiplying or dividing numerator and denominator by the same nonzero number. Simplify using their HCF.",
+      "With equal positive denominators, compare numerators. With equal positive numerators, the smaller positive denominator gives the larger fraction. With different positive denominators, cross-multiply.",
+      "For addition/subtraction, use a common denominator. Multiply numerators and denominators for multiplication. For division by a nonzero fraction, multiply by its reciprocal.",
+      "Remaining fraction = 1 − spent fraction. A fraction of the remainder has a changed base."
+    ],
+    "examples": [
+      [
+        "Simplify 18/24.",
+        "Divide both by HCF 6: 3/4."
+      ],
+      [
+        "Compare 5/6 and 7/9.",
+        "5 × 9 = 45; 7 × 6 = 42. Therefore 5/6 > 7/9."
+      ],
+      [
+        "Calculate 1/2 + 1/3.",
+        "LCM denominator 6: 3/6 + 2/6 = 5/6. Do not add denominators."
+      ],
+      [
+        "Spend half, then one-third of what remains. Fraction left?",
+        "After first spending, 1/2 remains. Keep 2/3 of that: 1/2 × 2/3 = 1/3 of the original."
+      ]
+    ],
+    "tip": "Cancel common factors before multiplying. For 3/8 of 160, calculate 160 ÷ 8 × 3 = 60.",
+    "practice": [
+      [
+        "30/45 simplified?",
+        "2/3."
+      ],
+      [
+        "2/3 + 1/4?",
+        "11/12."
+      ],
+      [
+        "3/4 ÷ 3/8?",
+        "2."
+      ],
+      [
+        "Spend 1/4, then 1/3 of the remainder: fraction left?",
+        "3/4 × 2/3 = 1/2."
+      ]
+    ]
+  },
+  {
+    "title": "Powers and roots",
+    "te": "ఘాతాలు, వర్గాలు, ఘనాలు, మూలాలు",
+    "concepts": [
+      "aⁿ represents repeated multiplication for positive integer n: 2³ = 2 × 2 × 2 = 8, not 2 × 3.",
+      "Square: 7² = 49. Principal square root: √49 = 7. But x² = 49 has two real solutions, x = 7 and −7.",
+      "Cube: 4³ = 64. Cube root: ∛64 = 4. Negative cube roots exist: ∛(−8) = −2.",
+      "Same-base multiplication adds exponents; division subtracts them (nonzero base). A power of a power multiplies exponents. For nonzero a, a⁰ = 1 and a⁻ⁿ = 1/aⁿ.",
+      "Prime factors pair for square roots and group in threes for cube roots. Perfect-square prime exponents are even."
+    ],
+    "examples": [
+      [
+        "√324 by factorisation?",
+        "324 = 2² × 3⁴, so √324 = 2 × 3² = 18."
+      ],
+      [
+        "Smallest positive integer multiplying 72 into a perfect square?",
+        "72 = 2³ × 3². Multiply by 2 to make both exponents even: 144 = 12²."
+      ],
+      [
+        "Estimate √70.",
+        "8² = 64 < 70 < 81 = 9², so 8 < √70 < 9."
+      ]
+    ],
+    "tip": "For a positive integer ending in 5, multiply the preceding digits as a number by its successor, then append 25: 115² → 11 × 12 = 132 → 13225. Learn squares 1–20 and cubes 1–10 first.",
+    "practice": [
+      [
+        "3⁴?",
+        "81."
+      ],
+      [
+        "5² × 5³?",
+        "5⁵ = 3125."
+      ],
+      [
+        "√225 and ∛125?",
+        "15 and 5."
+      ],
+      [
+        "Smallest multiplier making 48 square?",
+        "3: 48 × 3 = 144."
+      ]
+    ]
+  },
+  {
+    "title": "BODMAS and algebra",
+    "te": "క్రియల క్రమం మరియు సాధారణ సమీకరణాలు",
+    "concepts": [
+      "Order: brackets, then powers/roots, then multiplication and division left to right, then addition and subtraction left to right.",
+      "Division and multiplication have equal priority. Addition and subtraction have equal priority. BODMAS does not mean always divide before multiply.",
+      "Nested groups: work from the innermost outward. A fraction bar groups the entire numerator and denominator.",
+      "Defined symbols must follow the definition given in the question. For equations, perform the same valid operation on both sides."
+    ],
+    "examples": [
+      [
+        "24 ÷ 6 × 2?",
+        "Left to right: 4 × 2 = 8."
+      ],
+      [
+        "30 − [6 + 2(5 − 2)]?",
+        "30 − [6 + 2 × 3] = 30 − 12 = 18."
+      ],
+      [
+        "(12 + 8)/(6 − 2)?",
+        "20/4 = 5."
+      ],
+      [
+        "If a★b = 2a + b², find 3★4.",
+        "2 × 3 + 4² = 6 + 16 = 22."
+      ],
+      [
+        "7 + 3x = 25?",
+        "Subtract 7: 3x = 18. Divide by 3: x = 6."
+      ]
+    ],
+    "tip": "Multiplication by 5 = ×10 ÷2; by 25 = ×100 ÷4; by 125 = ×1000 ÷8. Example: 36 × 25 = 3600 ÷4 = 900.",
+    "practice": [
+      [
+        "15 + 5 × 2?",
+        "25."
+      ],
+      [
+        "36 ÷ 6 × 3?",
+        "18."
+      ],
+      [
+        "25 − 10 + 4?",
+        "19."
+      ],
+      [
+        "40 − [8 + 3(6 − 2)]?",
+        "20."
+      ]
+    ]
+  },
+  {
+    "title": "Ratio and proportion",
+    "te": "నిష్పత్తి, అనుపాతం, ప్రత్యక్ష–విలోమ మార్పులు",
+    "concepts": [
+      "A:B = 2:3 means A = 2k and B = 3k for a common scale k. It does not mean the quantities must literally be 2 and 3.",
+      "Order matters. Convert quantities of the same kind to the same unit before taking a ratio.",
+      "When a total is given, add ratio parts. When a difference is given, subtract ratio parts. A’s fraction of total in 2:3 is 2/5, not 2/3.",
+      "A proportion is equality of ratios: a/b = c/d implies ad = bc, with nonzero denominators.",
+      "Direct proportion keeps a ratio constant. Inverse proportion keeps a product constant. Fixed-job worker problems assume constant equal productivity and comparable working hours.",
+      "To combine A:B and B:C, make the shared B equal before joining the ratios."
+    ],
+    "examples": [
+      [
+        "Divide ₹600 in ratio 2:3.",
+        "5 parts; each ₹120. Shares ₹240 and ₹360."
+      ],
+      [
+        "Ratio 5:3; difference 24.",
+        "Difference 2 parts = 24, so one part = 12. Numbers 60 and 36."
+      ],
+      [
+        "4 workers take 12 days; 6 equal workers?",
+        "Fixed work: 4 × 12 = 6d, so d = 8 days."
+      ],
+      [
+        "A:B = 2:3 and B:C = 4:5.",
+        "Scale to 8:12 and 12:15. A:B:C = 8:12:15."
+      ]
+    ],
+    "tip": "Use the value of one part instead of a lengthy equation. For 4:7 with A = 28, one part = 7, so B = 49.",
+    "practice": [
+      [
+        "3 kg : 750 g?",
+        "4:1."
+      ],
+      [
+        "₹840 in 3:4?",
+        "₹360 and ₹480."
+      ],
+      [
+        "7:4 with difference 18?",
+        "42 and 24."
+      ],
+      [
+        "A:B = 3:4; B:C = 2:5?",
+        "3:4:10."
+      ]
+    ]
+  },
+  {
+    "title": "Percentages",
+    "te": "ప్రతి వందలో పోలిక; అసలు మొత్తాన్ని గుర్తించండి",
+    "concepts": [
+      "Percent means per hundred: 25% = 25/100 = 1/4 = 0.25. Percentage = part/reference quantity × 100.",
+      "Percentage change = change/original × 100. Ask “percentage of what?” before every calculation.",
+      "Increase by r% → multiply by 1 + r/100. Decrease → multiply by 1 − r/100. Multiplication by a positive factor below 1 reduces a positive quantity.",
+      "Successive changes multiply factors. Reverse a change by dividing the final value by the factor.",
+      "Percentage points measure the difference between rates. Relative percentage change compares that difference with the original rate."
+    ],
+    "examples": [
+      [
+        "Price ₹400 → ₹500; then compare ₹500 → ₹400.",
+        "First increase = 100/400 = 25%. Reverse decrease = 100/500 = 20%. Bases differ."
+      ],
+      [
+        "20% rise followed by 20% fall?",
+        "100 × 1.2 × 0.8 = 96: overall 4% fall."
+      ],
+      [
+        "Salary after 20% rise is ₹600. Original?",
+        "600/1.2 = ₹500. Do not subtract 20% of the final salary."
+      ],
+      [
+        "Pass rate 40% → 50%.",
+        "10 percentage-point increase; relative increase = 10/40 × 100 = 25%."
+      ]
+    ],
+    "tip": "Swap percentages: a% of b = b% of a. 16% of 25 = 25% of 16 = 4. Break 15% into 10% + 5%.",
+    "practice": [
+      [
+        "25% of 360?",
+        "90."
+      ],
+      [
+        "30% of N = 72. N?",
+        "240."
+      ],
+      [
+        "10% rise then 20% rise?",
+        "32% rise: 1.1 × 1.2 = 1.32."
+      ],
+      [
+        "₹900 after 25% discount: original?",
+        "₹1200."
+      ]
+    ]
+  },
+  {
+    "title": "Mean, median and mode",
+    "te": "సగటు, మధ్యగతం, బాహుళకం మరియు భారిత సగటు",
+    "concepts": [
+      "Mean = sum/count. Total = mean × count. Find missing observations by subtracting the known sum from the required total.",
+      "Median: sort first. Odd count → middle observation. Even count → mean of the two middle observations.",
+      "Mode is the most frequent value. There can be multiple modes. Under the usual school convention, all distinct values give no mode.",
+      "Weighted mean = sum of (value × weight)/sum of weights. For group averages, the weights are group sizes.",
+      "Adding a person changes both sum and count. Replacing a person keeps count fixed. Extreme values can strongly affect the mean."
+    ],
+    "examples": [
+      [
+        "Four numbers average 15; known values 10,12,18. Missing?",
+        "Required sum 60; known sum 40. Missing = 20."
+      ],
+      [
+        "Median of 9,2,7,4,20?",
+        "Sort: 2,4,7,9,20. Median 7."
+      ],
+      [
+        "10 students average 60; 20 average 75. Combined?",
+        "(10 × 60 + 20 × 75)/30 = 70. Do not average 60 and 75 directly."
+      ],
+      [
+        "Five people average 20; replace age 18 with 28.",
+        "Sum increases by 10; mean increases by 10/5 = 2. New mean 22."
+      ]
+    ],
+    "tip": "Assumed mean: for 48,52,49,51,55 use 50. Deviations −2,+2,−1,+1,+5 sum to 5. Average = 50 + 5/5 = 51.",
+    "practice": [
+      [
+        "Mean of 12,18,24,30?",
+        "21."
+      ],
+      [
+        "Median of 4,8,10,18?",
+        "9."
+      ],
+      [
+        "Mode of 2,4,4,5,5,5,8?",
+        "5."
+      ],
+      [
+        "10 students average 40; 30 average 60?",
+        "55."
+      ]
+    ]
+  },
+  {
+    "title": "Profit, loss and discount",
+    "te": "కొన్న ధర, లేబుల్ ధర, అమ్మిన ధర",
+    "concepts": [
+      "Cost price (CP) is acquisition cost; marked price (MP) is the label price; selling price (SP) is actual sale price.",
+      "Profit = SP − CP; loss = CP − SP. Ordinary profit/loss percentage uses CP as base. Discount percentage uses MP.",
+      "SP = CP × (1 + profit%/100), or CP × (1 − loss%/100). Reverse by division.",
+      "Markup then discount: multiply the two factors. Include additional expenses in cost when specified.",
+      "Equal selling prices, one x% profit and one x% loss (0 < x < 100): overall loss = x²/100 percent. This shortcut requires equal SP, not equal CP."
+    ],
+    "examples": [
+      [
+        "CP ₹800, MP ₹1200, SP ₹1000.",
+        "Profit ₹200 = 25% of CP. Discount ₹200 = 16⅔% of MP. Same rupee difference, different bases."
+      ],
+      [
+        "CP ₹500, markup 40%, discount 20%.",
+        "MP = 700; SP = 700 × 0.8 = 560. Profit = ₹60 = 12%. 1.4 × 0.8 = 1.12."
+      ],
+      [
+        "MP ₹1500, discount 12%.",
+        "10% = 150; 2% = 30. Discount ₹180; SP ₹1320."
+      ],
+      [
+        "Two items sold ₹120 each, at 20% profit and 20% loss.",
+        "Costs = 120/1.2 = 100 and 120/0.8 = 150. Total cost 250; SP 240. Loss 4%."
+      ]
+    ],
+    "tip": "25% profit gives CP:SP = 4:5. Two discounts a%, b% combine to a + b − ab/100 percent. 20% then 10% = 28%.",
+    "practice": [
+      [
+        "CP 400, SP 460: profit%?",
+        "15%."
+      ],
+      [
+        "SP 960 at 20% profit: CP?",
+        "₹800."
+      ],
+      [
+        "50% markup then 20% discount: profit%?",
+        "20%."
+      ],
+      [
+        "Equal SP, 10% gain/loss: overall?",
+        "1% loss."
+      ]
+    ]
+  },
+  {
+    "title": "Simple and compound interest",
+    "te": "అసలు, సాధారణ వడ్డీ, చక్రవడ్డీ",
+    "concepts": [
+      "Principal P is original money. Interest is additional money. Amount A = principal + interest. Keep the rate’s period and time units consistent.",
+      "Simple interest (SI) = PRT/100, where R is annual percent and T is years. It always uses the original principal.",
+      "Annual compound amount after n whole years: A = P(1 + R/100)ⁿ; CI = A − P. Interest is added to the balance for subsequent periods.",
+      "For a stated nominal annual rate compounded half-yearly, use R/2 per half-year and 2T periods; quarterly, R/4 and 4T periods.",
+      "For exactly two years, same rate, annual compounding: CI − SI = P(R/100)². Simple-interest doubling time = 100/R years for positive annual rate R."
+    ],
+    "examples": [
+      [
+        "₹5000 at 8% simple interest for 3 years.",
+        "SI = 5000 × 8 × 3/100 = ₹1200; amount ₹6200."
+      ],
+      [
+        "₹8000 at 12% SI for 9 months.",
+        "T = 9/12 year. SI = ₹720."
+      ],
+      [
+        "₹1000 at 10%, annually compounded, 3 years.",
+        "Year-end balances: 1100, 1210, 1331. Yearly interest: 100,110,121. CI = ₹331."
+      ],
+      [
+        "₹10000 at stated 10% annual rate, compounded half-yearly, 1 year.",
+        "Two periods at 5%: A = 10000 × 1.05² = ₹11025. CI ₹1025."
+      ]
+    ],
+    "tip": "At 10% annually, two-year compound growth is 21%; at 20%, it is 44%. Two-year CI percentage = 2R + R²/100. At 12% annual SI, each month earns 1% of principal.",
+    "practice": [
+      [
+        "SI: ₹3000, 5%, 2 years?",
+        "₹300."
+      ],
+      [
+        "₹5000 earns ₹1000 SI in 4 years: rate?",
+        "5% annually."
+      ],
+      [
+        "CI: ₹5000, 20%, 2 years annually?",
+        "₹2200."
+      ],
+      [
+        "CI − SI: ₹8000, 5%, 2 years annually?",
+        "₹20."
+      ],
+      [
+        "SI doubling time at 8%?",
+        "12.5 years."
+      ]
+    ]
+  },
+  {
+    "title": "Calculation shortcuts",
+    "te": "సులభ గణన చిట్కాలు — షరతులతో వాడండి",
+    "concepts": [
+      "Use shortcuts after understanding the concept. Some techniques are commonly taught as Vedic maths; others are ordinary mental-arithmetic identities.",
+      "×5 = ×10 ÷2; ×25 = ×100 ÷4; ×125 = ×1000 ÷8. Divide first when exact and easier.",
+      "a% of b = b% of a. Fraction anchors: 1/2 = 50%; 1/4 = 25%; 1/5 = 20%; 1/8 = 12.5%.",
+      "Numbers ending in 5: (10a + 5)² = 100a(a+1) + 25. Multiply a by a+1 and append 25.",
+      "Near base 100: (100−a)(100−b) = 100(100−a−b) + ab. The right part occupies two digits; carry if ab ≥ 100.",
+      "Assumed mean reduces large sums to small deviations. Ratio parts and percentage multipliers reduce repeated calculations."
+    ],
+    "examples": [
+      [
+        "97 × 96?",
+        "Deficits 3 and 4. Cross-subtract 97−4 = 93. Product 3×4 = 12. Answer 9312."
+      ],
+      [
+        "98 × 97?",
+        "Cross-subtract → 95. Deficit product 2×3 = 6; pad to 06. Answer 9506."
+      ],
+      [
+        "88 × 87 (carry case)?",
+        "Deficits 12 and 13. Left 75; right 156. 7500 + 156 = 7656. Carry 1 to left, keep 56 right."
+      ],
+      [
+        "65²?",
+        "6 × 7 = 42, append 25 → 4225."
+      ]
+    ],
+    "tip": "Choose the shortest reliable method, not the most elaborate trick. Estimate first to catch misplaced zeros and decimal points.",
+    "practice": [
+      [
+        "12% of 25?",
+        "3."
+      ],
+      [
+        "64 × 25?",
+        "1600."
+      ],
+      [
+        "95 × 97?",
+        "9215."
+      ],
+      [
+        "115²?",
+        "13225."
+      ]
+    ]
+  }
+];
+const el=document.getElementById('lessons'),nav=document.getElementById('nav');const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));let completed=[];try{completed=JSON.parse(localStorage.getItem('appsc-completed')||'[]');if(!Array.isArray(completed))completed=[]}catch{};
+function updateProgress(){document.getElementById('progress').textContent=completed.length+' / '+topics.length+' sections marked reviewed'}
+topics.forEach((t,i)=>{const id='topic-'+(i+1),a=document.createElement('a');a.href='#'+id;a.textContent=String(i+1).padStart(2,'0')+'  '+t.title;nav.append(a);const section=document.createElement('section');section.id=id;section.innerHTML=`<div class="eyebrow">Lesson ${String(i+1).padStart(2,'0')}</div><h2>${esc(t.title)}</h2><p class="te" lang="te">${esc(t.te)}</p><h3>Understand the concept</h3><ul>${t.concepts.map(c=>'<li>'+esc(c)+'</li>').join('')}</ul><h3>Worked question types</h3>${t.examples.map(([q,a])=>'<div class="card"><h3>'+esc(q)+'</h3><p>'+esc(a)+'</p></div>').join('')}<h3>Calculation shortcut</h3><p class="tip">${esc(t.tip)}</p><h3>Try it yourself</h3><p>Work it out first. Open each question to check your answer.</p>${t.practice.map(([q,a])=>'<details><summary>'+esc(q)+'</summary><p>'+esc(a)+'</p></details>').join('')}<div class="actions"><button data-review="${i}" aria-pressed="${completed.includes(i)}" class="${completed.includes(i)?'done':''}">${completed.includes(i)?'✓ Reviewed':'Mark reviewed'}</button><a href="#${i<topics.length-1?'topic-'+(i+2):'next'}">Next section →</a></div>`;el.append(section)});
+nav.insertAdjacentHTML('beforeend','<a href="#next">Continue & resources →</a>');updateProgress();
+document.addEventListener('click',e=>{const b=e.target.closest('[data-review]');if(!b)return;const n=Number(b.dataset.review);completed=completed.includes(n)?completed.filter(x=>x!==n):[...completed,n];try{localStorage.setItem('appsc-completed',JSON.stringify(completed))}catch{}b.classList.toggle('done',completed.includes(n));b.setAttribute('aria-pressed',completed.includes(n));b.textContent=completed.includes(n)?'✓ Reviewed':'Mark reviewed';updateProgress()});
+document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();let visible=0;topics.forEach((t,i)=>{const match=JSON.stringify(t).toLowerCase().includes(q);document.getElementById('topic-'+(i+1)).hidden=!match;nav.children[i].hidden=!match;if(match)visible++});document.getElementById('empty').style.display=visible?'none':'block'});
+document.getElementById('mobile').onclick=()=>{const open=document.getElementById('sidebar').classList.toggle('open');document.getElementById('mobile').setAttribute('aria-expanded',open)};
+nav.addEventListener('click',e=>{if(e.target.tagName==='A'){document.getElementById('sidebar').classList.remove('open');document.getElementById('mobile').setAttribute('aria-expanded','false')}});
+document.getElementById('print').onclick=()=>{const ds=[...document.querySelectorAll('details')];const before=ds.map(x=>x.open);ds.forEach(x=>x.open=true);window.print();ds.forEach((x,i)=>x.open=before[i])};
+const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){nav.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id))}})},{rootMargin:'-10% 0px -65% 0px'});document.querySelectorAll('main section').forEach(s=>observer.observe(s));
+</script></body></html>
