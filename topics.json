@@ -773,5 +773,337 @@
         "సగటులో తేడాలు, నిష్పత్తిలో ఒక్క భాగం, శాతాల్లో గుణకాలు వాడితే అనవసర లెక్కలు తగ్గుతాయి."
       ]
     ]
+  },
+  {
+    "title": "Time and work",
+    "te": "పని వేగం, కలిసి పని చేయడం, సామర్థ్యం",
+    "concepts": [
+      "Work = rate × time. If a person takes a days for one job, their daily rate is 1/a job.",
+      "For simultaneous workers, add rates; do not add their completion times.",
+      "An unknown worker’s rate equals combined rate minus the known worker’s rate.",
+      "For joining or leaving, calculate each stage’s completed work and then the remaining work.",
+      "For fixed work, time is inverse to efficiency. With equal workers, work is proportional to workers × days × hours/day.",
+      "When payment is based on work done, contribution = rate × time."
+    ],
+    "explanations": [
+      [
+        "A takes 10 days: divide the job into 10 equal portions. A completes one portion per day, so three days complete 3/10 = 30%. Using one whole job is a choice of unit, not a guess about physical quantity. If the real job is x units, rate is x/10 and the same x cancels in the time calculation.",
+        "మొత్తం పనిని ఒక పూర్తి పనిగా కొలుస్తాం. 10 రోజులు పడితే రోజుకు పదో వంతు చేస్తారు. పని x యూనిట్లుగా తీసుకున్నా చివరి ఫలితం మారదు."
+      ],
+      [
+        "A takes 10 days and B 15. Daily combined rate = 1/10 + 1/15 = 1/6. They do one-sixth per day, so finish in 6 days. Equivalently choose LCM 30 work units: A does 3/day, B 2/day; 30/5 = 6 days.",
+        "కలిసి చేసే రోజువారీ పనులను కలపాలి. రోజులను కాదు. LCMతో మొత్తం పని తీసుకుంటే భిన్నాలు తగ్గుతాయి."
+      ],
+      [
+        "A+B finish in 12 days; A alone in 20. Use 60 units: combined rate 5/day, A 3/day, so B 2/day. B alone takes 60/2 = 30 days. Subtracting 20−12 would subtract times, not contributions.",
+        "కలిపి చేసే పనిలో తెలిసిన వ్యక్తి పనిని తీసివేస్తే మరొకరి పని వస్తుంది."
+      ],
+      [
+        "A takes 10 days and B 15. Together for 3 days complete 3×(1/10+1/15) = 1/2. B alone finishes the remaining half in (1/2)/(1/15) = 7.5 days. Total = 3+7.5 = 10.5 days. For A=6, B=12, together 2 days then A leaves: half remains, B needs 6 more days, total 8.",
+        "మొదటి దశలో చేసిన పని కనుగొని తీసివేయాలి. మిగిలిన పనికి పట్టే సమయాన్ని లెక్కించి గడిచిన సమయాన్ని కలపాలి."
+      ],
+      [
+        "If A is 50% more efficient, rates A:B = 3:2 and times = 2:3. If B takes 12 days, A takes 8. For 6 workers×10 days×8 hours = 480 worker-hours, 8 workers at 6 hours/day need 480/48 = 10 days. Assume equal constant productivity and divisible work.",
+        "వేగం ఎక్కువైతే అదే పనికి సమయం తక్కువ. కార్మికుల సంఖ్యతో పాటు రోజువారీ గంటలనూ పరిగణించాలి."
+      ],
+      [
+        "Rates A:B = 2:3. A works 3 days, B 2 days. Contributions are 2×3 : 3×2 = 6:6. Divide ₹900 equally: ₹450 each. Equal durations alone would allow using just the rate ratio.",
+        "చెల్లింపును చేసిన పని ప్రకారం పంచితే వేగం, పనిచేసిన సమయం రెండింటినీ గుణించాలి."
+      ]
+    ],
+    "examples": [
+      [
+        "A=10 days, B=15 days, together 3 days, then A leaves.",
+        "Total 30 units → rates 3 and 2/day → first stage 15 units → remaining 15 → B needs 7.5 days → total 10.5 days."
+      ],
+      [
+        "Use x instead of assuming an LCM total.",
+        "For total x, A’s rate x/10 and B’s x/15. Together time = x/(x/10+x/15) = 6. The chosen size cancels."
+      ],
+      [
+        "A+B take 12 days; A takes 20.",
+        "Rate of B = 1/12−1/20 = 1/30. B takes 30 days."
+      ]
+    ],
+    "tip": "Two workers alone taking a,b days finish together in ab/(a+b) days at constant rates. If both work t days then A leaves, remaining time for B = b[1−t(1/a+1/b)], provided the job is not already complete. Add t for total elapsed time.",
+    "practice": [
+      [
+        "A takes 12 days; B 18. Together?",
+        "36 units; rates 3+2=5/day; 36/5=7.2 days."
+      ],
+      [
+        "Together 8 days; A alone 12. B alone?",
+        "24 days."
+      ],
+      [
+        "A=6 days, B=12. Together 2 days then A leaves. Total?",
+        "8 days: half done in 2 days; remaining half takes B 6 days."
+      ],
+      [
+        "A 25% more efficient; B takes 20 days. A?",
+        "16 days: rate ratio 5:4, time ratio 4:5."
+      ],
+      [
+        "8 workers take 15 days; 12 equal workers?",
+        "10 days at the same daily hours."
+      ],
+      [
+        "Rates 2:3; A works 3 days, B 2. Divide ₹900 by work.",
+        "₹450 each: contributions 6:6."
+      ]
+    ]
+  },
+  {
+    "title": "Pipes and cisterns",
+    "te": "ట్యాంకు నింపడం, ఖాళీ చేయడం, నికర ప్రవాహం",
+    "concepts": [
+      "A filling pipe taking a hours has rate +1/a tank/hour; an emptying pipe taking b hours has rate −1/b.",
+      "Add filling rates and subtract emptying rates. Time = required volume/net rate.",
+      "Check the sign of net flow before interpreting a filling time.",
+      "Leak rate = normal inlet rate − observed net filling rate.",
+      "For partial tanks and changes in operation, calculate remaining volume at each stage.",
+      "For alternating pipes, count full cycles and calculate the final partial turn."
+    ],
+    "explanations": [
+      [
+        "A pipe fills in 6 hours: each hour adds 1/6. In 2 hours it adds 1/3. Treat a tank as one whole or use convenient capacity units. These standard problems assume constant effective rates.",
+        "గంటకు ఎంత భాగం చేరుతుందో ప్రవాహ వేగం. నింపేది ధనంగా, బయటకు తీసేది ఋణంగా తీసుకోవాలి."
+      ],
+      [
+        "A fills in 6 hours, B fills in 12: capacity 12 units; rates 2+1=3; time 4 hours. If B instead empties, rate is 2−1=1; time 12 hours. Each hour only the net inflow stays.",
+        "లోపలికి వచ్చే నీటి నుంచి బయటకు వెళ్లే నీటిని తీసివేయాలి. మిగిలే నీరే నికర పెరుగుదల."
+      ],
+      [
+        "An inlet of 1/12 tank/hour and outlet capacity 1/6 give negative net flow. A tank cannot fill from empty with those continuously operating rates. Equal rates give no rise. A negative calculated time is not a physical filling time.",
+        "నికర ప్రవాహం సున్నా లేదా ఋణమైతే ఖాళీ ట్యాంకు నిండదు. మైనస్ గంటలు అని సమాధానం రాయకూడదు."
+      ],
+      [
+        "Normally 6 hours, with leak 8: use capacity 24. Inlet adds 4 units/hour; observed increase 3. Leak removes 1 unit/hour, so it alone empties 24 units in 24 hours.",
+        "లీక్ లేకుండా చేరాల్సిన నీరు, నిజంగా చేరిన నీరు మధ్య తేడానే లీక్ తీసేసిన నీరు."
+      ],
+      [
+        "A=6 hours and B=12. Both run 2 hours: 6 of 12 units fill. A closes; B supplies remaining 6 at 1/hour. Total 8 hours. If a tank is already 3/4 full, a pipe with full filling time 8 hours needs 8×1/4=2 more hours.",
+        "మిగిలిన నీటి పరిమాణానికి మాత్రమే తరువాతి సమయం లెక్కించాలి. మొత్తం సమయం అడిగితే ముందు గడిచిన కాలాన్ని కలపాలి."
+      ],
+      [
+        "A fills in 3 hours and B in 6, alternating hourly from A. Capacity 6; rates 2 and 1. After 3 hours, 5 units are filled; B fills the last unit in the fourth hour. Stop when full, even if a turn is incomplete.",
+        "పూర్తి చక్రాల తరువాత మిగిలిన భాగం ఏ పైపు సమయంలో నిండుతుందో చూడాలి."
+      ]
+    ],
+    "examples": [
+      [
+        "Inlet 6 hours, outlet 12 hours: filling time?",
+        "1/6−1/12=1/12 tank/hour; time 12 hours."
+      ],
+      [
+        "Normal fill 6 hours, leaking fill 8 hours: leak alone?",
+        "1/6−1/8=1/24; emptying time 24 hours."
+      ],
+      [
+        "A fills in 4 hours, B in 8, alternate hourly from A.",
+        "Use 8 units. In four hours 6 units fill. A fills the last 2 units in hour five: total 5 hours."
+      ]
+    ],
+    "tip": "For inlet a hours, outlet b hours with b>a: filling time ab/(b−a). Leak-only time = normal time×actual time/(actual−normal). Convert decimal hours to minutes by ×60: 4.8 hours = 4 h 48 min.",
+    "practice": [
+      [
+        "Two filling pipes: 8 and 12 hours. Together?",
+        "24 units / (3+2) = 4.8 hours = 4 h 48 min."
+      ],
+      [
+        "Inlet 4 hours, outlet 6. Both open?",
+        "12 hours."
+      ],
+      [
+        "Normal fill 10 hours, with leak 15. Leak alone?",
+        "30 hours."
+      ],
+      [
+        "Full fill 9 hours; already 2/3 full. Remaining time?",
+        "3 hours."
+      ],
+      [
+        "A=5 hours, B=10; both 2 hours, then B closes. Total?",
+        "4 hours."
+      ],
+      [
+        "A=4 hours, B=8; alternate hourly starting A. Total?",
+        "5 hours."
+      ]
+    ]
+  },
+  {
+    "title": "Speed, time and distance",
+    "te": "వేగం, సమయం, దూరం మరియు సాపేక్ష వేగం",
+    "concepts": [
+      "Distance = speed × time; speed = distance/time; time = distance/speed.",
+      "Match units: hours with km/h, seconds with m/s. km/h to m/s uses ×5/18; reverse uses ×18/5.",
+      "At fixed distance, speed and time are inversely proportional.",
+      "Average speed = total distance/total elapsed time. Equal-distance and equal-time cases differ.",
+      "Relative speed measures the rate at which separation changes: add when approaching, subtract when chasing in the same direction.",
+      "Late/early problems compare journey times; whole-journey averages include stops."
+    ],
+    "explanations": [
+      [
+        "60 km/h means 60 kilometres every hour. In 3 hours the distance is 60+60+60=180 km. For a known 180 km at that speed, 180/60=3 hours.",
+        "గంటకు 60 కిలోమీటర్లు అంటే ప్రతి గంటలో 60 కిలోమీటర్ల దూరం."
+      ],
+      [
+        "One km/hour =1000 metres/3600 seconds =5/18 m/s. Thus 72 km/h =20 m/s. Thirty minutes is 30/60=0.5 hour; 1 h 30 min is 1.5 hours, not 1.30.",
+        "ఒకే ప్రమాణాలుగా మార్చిన తరువాత లెక్కించాలి. నిమిషాలను గంటలుగా మార్చడానికి 60తో భాగించాలి."
+      ],
+      [
+        "A journey at 60 km/h takes 4 hours, covering 240 km. At 80 km/h it takes 240/80=3 hours. Shortcut: new time = old time×old speed/new speed. A 25% speed rise gives factor 5/4, so time becomes 4/5: 20% less.",
+        "దూరం మారనప్పుడు వేగం పెరిగితే సమయం తగ్గుతుంది. వేగం గుణకానికి విలోమం సమయం గుణకం."
+      ],
+      [
+        "60 km at 30 km/h takes 2 hours; another 60 km at 60 takes 1. Average =120/3=40 km/h. More time is spent at the lower speed. Equal one-hour periods at 30 and 60 instead give 90/2=45.",
+        "సమాన దూరాలకు సమయాలు సమానం కావు. మొత్తం దూరాన్ని మొత్తం సమయంతో భాగించాలి."
+      ],
+      [
+        "Two people 100 km apart approaching at 30 and 20 close 50 km per hour; meet in 2 hours. A 60 km/h car chasing a 40 km/h car 30 km ahead gains 20 per hour; catches in 1.5 hours.",
+        "ఎదురెదురుగా వస్తే దూరం తగ్గే వేగాలు కలుస్తాయి. ఒకే దిశలో వెళ్తే వేగాల తేడా తీసుకోవాలి."
+      ],
+      [
+        "At 4 km/h a person is 10 min late; at 5 km/h 5 min early. Difference 15 min. Each km takes 15 vs 12 min: 3 min difference, so distance 15/3=5 km. For 120 km in 2 moving hours plus 30 min stops, average =120/2.5=48 km/h.",
+        "ఆలస్యం, ముందుగా చేరే సమయాలను కలిపితే ప్రయాణ సమయాల తేడా వస్తుంది. ఆగిన సమయాన్నీ మొత్తం సమయానికి కలపాలి."
+      ]
+    ],
+    "examples": [
+      [
+        "Equal distances at 30 and 60 km/h: average?",
+        "Choose 60 km each: times 2 and 1 h; average 120/3=40 km/h."
+      ],
+      [
+        "Speed rises 20%: time reduction for fixed distance?",
+        "Speed factor 6/5; time factor 5/6; reduction 1/6=16⅔%."
+      ],
+      [
+        "4 km/h: 10 min late; 5 km/h: 5 min early. Distance?",
+        "Time difference per km = 60/4−60/5=3 min. Total difference 15 min; distance 5 km. Scheduled duration 65 min."
+      ]
+    ],
+    "tip": "For two equal distances at positive speeds a,b: average =2ab/(a+b). For two equal durations: average =(a+b)/2. For fixed distance, a speed increase of p% reduces time by 100p/(100+p) percent.",
+    "practice": [
+      [
+        "45 km/h for 2 h 20 min: distance?",
+        "105 km."
+      ],
+      [
+        "90 km/h in m/s?",
+        "25 m/s."
+      ],
+      [
+        "12 m/s in km/h?",
+        "43.2 km/h."
+      ],
+      [
+        "6 hours at 40 km/h: time at 60?",
+        "4 hours."
+      ],
+      [
+        "Equal distances at 40 and 60: average?",
+        "48 km/h."
+      ],
+      [
+        "150 km apart, approaching at 40 and 35: meeting time?",
+        "2 hours."
+      ],
+      [
+        "70 follows 50 km/h; initial gap 40 km: catch time?",
+        "2 hours."
+      ],
+      [
+        "Speed increases 20%: time reduction?",
+        "16⅔% for fixed distance."
+      ]
+    ]
+  },
+  {
+    "title": "Trains and boats",
+    "te": "రైళ్లు దాటడం, ప్రవాహంలో పడవ వేగం",
+    "concepts": [
+      "Passing a stationary pole requires the train to travel its own length. Crossing a platform requires train length plus platform length.",
+      "For two trains crossing completely, add both lengths; use sum or difference of speeds according to direction.",
+      "At unchanged speed, extra platform-crossing time beyond pole-crossing time corresponds to the platform length.",
+      "Downstream speed = still-water boat speed + stream speed. Upstream speed = boat speed − stream speed.",
+      "Still-water speed =(downstream+upstream)/2; stream speed =(downstream−upstream)/2.",
+      "Round-trip average uses total distance/total time; it need not equal still-water boat speed."
+    ],
+    "explanations": [
+      [
+        "For a 180 m train at 54 km/h=15 m/s, a pole takes 180/15=12 seconds. A 120 m platform requires 180+120=300 m, so 20 seconds. The rear must clear the obstacle, not just the front.",
+        "చివరి బోగీ కూడా దాటాలి కాబట్టి రైలు పొడవును పరిగణించాలి. ప్లాట్‌ఫారం ఉంటే దాని పొడవునూ కలపాలి."
+      ],
+      [
+        "Opposite trains 120 m and 180 m at 36 and 54 km/h: length 300 m; relative speed 90 km/h=25 m/s; time 12 seconds. Same-direction trains 150 m and 100 m at 72 and 54: relative speed 5 m/s; 250/5=50 seconds from first overlap to complete clearance. Include any initial gap if timing begins earlier.",
+        "రెండు రైళ్ల పొడవులు కలపాలి. ఎదురుగా వస్తే వేగాలు కలపాలి; ఒకే దిశలో అయితే తేడా తీసుకోవాలి."
+      ],
+      [
+        "A train at 20 m/s passes a pole in 10 s and platform in 25 s. Subtract the common train-length time: platform length =20×(25−10)=300 m.",
+        "రెండు సమయాల్లో రైలు పొడవు దాటే సమయం ఉమ్మడిగా ఉంది. అదనపు సమయం ప్లాట్‌ఫారం వల్లే వస్తుంది."
+      ],
+      [
+        "Boat speed 10 km/h and current 2 give downstream 12, upstream 8. Flow helps in one direction and opposes in the other. Positive upstream progress requires boat speed greater than current.",
+        "ప్రవాహం దిశలో వేగం పెరుగుతుంది; ఎదురుగా తగ్గుతుంది. ఎదురు ప్రయాణానికి పడవ వేగం ప్రవాహం కంటే ఎక్కువ కావాలి."
+      ],
+      [
+        "For downstream 15 and upstream 9, boat speed =(15+9)/2=12; stream =(15−9)/2=3. Adding cancels the current; subtracting isolates twice the current. If given distances and times, calculate the speeds first.",
+        "రెండు వేగాలను కలిపితే ప్రవాహ ప్రభావం రద్దవుతుంది. తీసివేస్తే ప్రవాహ వేగానికి రెండింతలు వస్తుంది."
+      ],
+      [
+        "For 24 km each way at downstream 12 and upstream 8: times 2 and 3 hours. Average =48/5=9.6 km/h, while boat speed is 10. More time is spent going upstream.",
+        "ఎదురు ప్రయాణానికి ఎక్కువ సమయం పడుతుంది. అందుకే రాకపోకల సగటు వేగం నిలకడ నీటి వేగంతో సమానం కాదు."
+      ]
+    ],
+    "examples": [
+      [
+        "180 m train, 120 m platform, speed 54 km/h.",
+        "Convert to 15 m/s. Distance 300 m; time 20 s."
+      ],
+      [
+        "Two trains 120 m each at 60 and 42 km/h, same direction.",
+        "Combined length 240 m; relative speed 18 km/h=5 m/s. Complete overtake time 48 s from first overlap."
+      ],
+      [
+        "24 km downstream in 2 h, upstream in 3 h.",
+        "Speeds 12 and 8. Boat=(12+8)/2=10 km/h; stream=(12−8)/2=2."
+      ],
+      [
+        "24 km each way at 12 and 8 km/h: round-trip average.",
+        "Total 48 km; time 2+3=5 h; average 9.6 km/h."
+      ]
+    ],
+    "tip": "Always write metres/seconds or kilometres/hours consistently. Platform length =speed×(platform crossing time−pole crossing time) at the same speed. Use the half-sum/half-difference shortcut on speeds, not times.",
+    "practice": [
+      [
+        "200 m train at 72 km/h: pole time?",
+        "10 s."
+      ],
+      [
+        "150 m train, 250 m platform, 54 km/h: time?",
+        "400/15=26⅔ s."
+      ],
+      [
+        "100 m and 200 m trains, opposite at 36 and 72 km/h?",
+        "10 s: 300/30."
+      ],
+      [
+        "Two 120 m trains, same direction 60 and 42: overtake time?",
+        "48 s from first overlap."
+      ],
+      [
+        "Downstream 18, upstream 12: boat and current?",
+        "15 km/h and 3 km/h."
+      ],
+      [
+        "Boat 8, current 2: time for 30 km upstream?",
+        "5 hours."
+      ],
+      [
+        "Pole 8 s; platform 20 s; speed 15 m/s: platform length?",
+        "180 m."
+      ]
+    ]
   }
 ]
