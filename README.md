@@ -6,7 +6,7 @@ Responsive static study website covering the cumulative lessons discussed in the
 Create public repository `appsc-aptitude`, upload these files to `main`, then Settings → Pages → Deploy from a branch → main → /(root) → Save.
 
 ## Content and maintenance
-15 sections: number system; HCF/LCM; fractions; powers/roots; BODMAS; ratio/proportion; percentages; mean/median/mode; profit/loss/discount; interest; calculation shortcuts; time/work; pipes/cisterns; speed/time/distance; trains/boats. Each includes concepts, Telugu summary, worked examples and practice with answers.
+16 sections: number system; HCF/LCM; fractions; powers/roots; BODMAS; ratio/proportion; percentages; mean/median/mode; profit/loss/discount; interest; calculation shortcuts; time/work; pipes/cisterns; speed/time/distance; trains/boats; problems on ages. Each includes concepts, Telugu summary, worked examples and practice with answers.
 
 Canonical content is embedded in index.html so the page also works offline. topics.json is an editable copy. When updating, keep both in sync. Add new lessons after they are taught; do not label planned topics as completed. Preserve examples, explain shortcut conditions, check numerical answers and preserve the user’s simplified homepage. Do not include private personal information.
 
