@@ -1105,5 +1105,104 @@
         "180 m."
       ]
     ]
+  },
+  {
+    "title": "Problems on ages",
+    "te": "ప్రస్తుత, గత, భవిష్యత్ వయస్సులు — సమీకరణాలు మరియు నిష్పత్తులు",
+    "concepts": [
+      "After t years, every person’s age increases by t; t years ago, subtract t from every person’s present age.",
+      "The difference between two people’s ages stays constant, while their age ratio generally changes.",
+      "For present ratio a:b, write present ages ak and bk. Add or subtract actual years, not ratio parts.",
+      "Translate ‘A is three times as old as B’ as A=3B. If it refers to a future time, compare both future ages.",
+      "For n people, the sum of ages increases by nt after t years, and the average age increases by t.",
+      "When the same two people have age ratios a:b and c:d at two times, use their fixed age difference to match ratio scales."
+    ],
+    "explanations": [
+      [
+        "If a person is x now, their age after 5 years is x+5 and 5 years ago is x−5. For a father and son, build a table: now F,S; after 5 years F+5,S+5. Both people move along the same timeline.",
+        "ఐదు సంవత్సరాల తరువాత ప్రతి వ్యక్తికీ ఐదు సంవత్సరాలు కలపాలి. ఒకరి వయస్సుకే కలిపితే పోలిక తప్పుతుంది."
+      ],
+      [
+        "For ages 40 and 10, the difference is 30. After 5 years the ages are 45 and 15: difference still 30, but ratio changes from 4:1 to 3:1. Adding the same number preserves subtraction, not division.",
+        "ఇద్దరికీ ఒకే సంవత్సరాలు పెరుగుతాయి కాబట్టి వయస్సుల తేడా మారదు. నిష్పత్తి మాత్రం మారుతుంది."
+      ],
+      [
+        "Ratio 3:5 means ages 3k and 5k for a shared k. If their sum is 48, 8k=48 so k=6, giving 18 and 30. After 4 years use 3k+4 and 5k+4; do not use (3+4):(5+4).",
+        "నిష్పత్తి భాగాలు అసలు సంవత్సరాలు కావు. ముందుగా ఒక్క భాగం విలువ కనుగొని తరువాత సంవత్సరాలు కలపాలి."
+      ],
+      [
+        "Father 40, son 10. To ask when father will be three times as old, write 40+t=3(10+t). Expand: 40+t=30+3t, so 10=2t and t=5. Check ages 45 and 15. Notice three multiplies the entire son’s future age.",
+        "భవిష్యత్ వయస్సులనే పోల్చాలి. 3(10+t)లో మూడు అనేది కొడుకు పూర్తి భవిష్యత్ వయస్సుకు వర్తిస్తుంది."
+      ],
+      [
+        "Four people total 100 years now. After 3 years each adds 3, so total increases by 12 to 112. Their average goes from 25 to 28. This assumes the same people are being compared.",
+        "నలుగురికీ మూడు చొప్పున కలిస్తే మొత్తానికి పన్నెండు పెరుగుతుంది. సగటు మాత్రం మూడు పెరుగుతుంది."
+      ],
+      [
+        "Present ratio 4:1 and after 5 years ratio 3:1: present ages 4k,k and future ages 3m,m. Fixed difference gives 3k=2m. Take k=2u,m=3u, so younger person goes from 2u to 3u over 5 years; u=5. Present ages 40,10. Algebra is often quicker: (4k+5)/(k+5)=3 gives k=10.",
+        "రెండు కాలాల్లో తేడా సమానంగా ఉండేలా భాగాలను సర్దుబాటు చేయవచ్చు. లేదా నిష్పత్తి సమీకరణం రాస్తే నేరుగా పరిష్కరించవచ్చు."
+      ]
+    ],
+    "examples": [
+      [
+        "Present ages in ratio 3:5; sum 48. Find ages.",
+        "8 parts=48, so one part=6 years. Ages 18 and 30. Their ratio after 4 years is 22:34=11:17."
+      ],
+      [
+        "Ages in ratio 5:2; difference 24.",
+        "3 parts=24, so one part=8. Ages 40 and 16."
+      ],
+      [
+        "Father 40 and son 10: when will father be three times as old?",
+        "40+t=3(10+t) → 10=2t → t=5 years. Check 45=3×15."
+      ],
+      [
+        "Father is three times his son now. Ten years ago he was five times as old. Find present ages.",
+        "Son x, father 3x. Past: 3x−10=5(x−10). Thus 3x−10=5x−50 → x=20. Father 60. Check past ages 50 and 10."
+      ],
+      [
+        "Present ratio 4:5; after 6 years 5:6. Find present ages.",
+        "(4k+6)/(5k+6)=5/6. Cross-multiply: 24k+36=25k+30 → k=6. Ages 24 and 30. Future 30 and 36 give 5:6."
+      ],
+      [
+        "Mother 36, child 12: how many years ago was she four times as old?",
+        "36−t=4(12−t) → 36−t=48−4t → 3t=12 → t=4. Past ages 32 and 8."
+      ]
+    ],
+    "tip": "If older age F and younger age S are known, time until older is m times younger is t=(F−mS)/(m−1), for m≠1. It follows from F+t=m(S+t). Positive t means future; negative t means past, and resulting ages must be meaningful. With F=40,S=10,m=3: (40−30)/2=5. Use age difference to avoid two unknowns: if difference 30 and future ratio 3:1, future younger age=30/(3−1)=15, hence 5 years from age 10.",
+    "practice": [
+      [
+        "Present ratio 2:3; sum 50. Ages?",
+        "20 and 30 years: 5 parts=50."
+      ],
+      [
+        "Present ratio 7:4; difference 18. Ages?",
+        "42 and 24 years: 3 parts=18."
+      ],
+      [
+        "Father 45, son 15. When will father be twice as old?",
+        "15 years later: 45+t=2(15+t), t=15; ages 60 and 30."
+      ],
+      [
+        "Mother 36, child 12. When was mother four times as old?",
+        "4 years ago: 36−t=4(12−t); t=4."
+      ],
+      [
+        "Present ratio 3:4; after 5 years 4:5. Ages?",
+        "15 and 20: (3k+5)/(4k+5)=4/5 → 15k+25=16k+20 → k=5."
+      ],
+      [
+        "Four people average 25 years. Their total age after 3 years?",
+        "112 years: 4×25+4×3."
+      ],
+      [
+        "Father three times son now; 10 years ago five times. Ages now?",
+        "Father 60 and son 20."
+      ],
+      [
+        "A is 24 and B 36. Ratio after 6 years?",
+        "30:42=5:7. Difference remains 12."
+      ]
+    ]
   }
 ]
